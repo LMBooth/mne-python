@@ -165,7 +165,7 @@ your operating system.
    with ``curl``) and use it to create a new environment (named ``mne`` by
    default)::
 
-       $ conda install --name base nb_conda_kernels
+       $ conda install --name base nb_conda_kernels "spyder>=4.1.4"
        $ curl --remote-name https://raw.githubusercontent.com/mne-tools/mne-python/master/environment.yml
        $ conda env update --file environment.yml
 
@@ -173,7 +173,7 @@ your operating system.
 
    - Download the `environment file`_
    - Open an Anaconda command prompt
-   - Run :samp:`conda install --name base nb_conda_kernels`
+   - Run :samp:`conda install --name base nb_conda_kernels "spyder>=4.1.4"`
    - :samp:`cd` to the directory where you downloaded the file
    - Run :samp:`conda env update --file environment.yml`
 

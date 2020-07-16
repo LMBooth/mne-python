@@ -22,6 +22,7 @@ dependencies:
 - pyface>=6
 - traitsui>=6
 - imageio>=2.6.1
+- spyder-kernels>=1.9.2
 - pip:
   - mne
   - https://github.com/numpy/numpydoc/archive/master.zip
@@ -38,4 +39,3 @@ dependencies:
   - python-picard
   - tqdm
   - PyQt5>=5.10
-  - spyder-kernels
