@@ -291,16 +291,16 @@ Python development are:
   use Python. It is included by default in the ``base`` environment when you
   install Anaconda, and can be started from a terminal with the command
   ``spyder`` (or on Windows or macOS, launched from the Anaconda Navigator GUI).
-  If you installed MNE-Python into a separate ``mne`` environment (not the
-  ``base`` Anaconda environment), you can set up Spyder to use the ``mne``
-  environment automatically, by opening Spyder and navigating to
+  If you use Spyder, you should *not* install it into the ``mne`` environment;
+  instead, launch Spyder from the ``base`` environment and set it to use the
+  ``mne`` environment automatically, by opening Spyder and navigating to
   :samp:`Tools > Preferences > Python Interpreter > Use the following interpreter`.
   There, paste the output of the following terminal command::
 
       $ conda activate mne && python -c "import sys; print(sys.executable)"
 
   It should be something like ``C:\Users\user\anaconda3\envs\mne\python.exe``
-  (Windows) or ``/Users/user/anaconda3/envs/mne/bin/python`` (macOS).
+  (Windows) or ``/Users/user/opt/anaconda3/envs/mne/bin/python`` (macOS).
 - `Visual Studio Code`_ (often shortened to "VS Code" or "vscode") is a
   development-focused text editor that supports many programming languages in
   addition to Python, includes an integrated terminal console, and has a rich
